@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsAndConditionActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@mipmap/left_arrow" />
+
+    <TextView
+        android:id="@+id/ivSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="SKip"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBack"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="My sexual orientation is"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/relTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/tvStraight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="Straight" />
+
+        <ImageView
+            android:id="@+id/ivStraight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvStraight" />
+        <TextView
+            android:id="@+id/tvGay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/ivStraight"
+            android:text="Gay" />
+
+        <ImageView
+            android:id="@+id/ivGay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvGay" />
+        <TextView
+            android:id="@+id/tvBisexual"
+            android:layout_below="@+id/ivGay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Bisexual" />
+
+        <ImageView
+            android:id="@+id/ivBisexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvBisexual" />
+        <TextView
+            android:id="@+id/tvPanSexual"
+            android:layout_below="@+id/ivBisexual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Pansexual" />
+
+        <ImageView
+            android:id="@+id/ivPanSexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvPanSexual" />
+        <TextView
+            android:id="@+id/tvDemisexual"
+            android:layout_below="@+id/ivPanSexual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Demisexual" />
+
+        <ImageView
+            android:id="@+id/ivDemisexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvDemisexual" />
+        <TextView
+            android:id="@+id/tvAsexual"
+            android:layout_below="@+id/ivDemisexual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Asexual" />
+
+        <ImageView
+            android:id="@+id/ivAsexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvAsexual" />
+        <TextView
+            android:id="@+id/tvGraySexual"
+            android:layout_below="@+id/ivAsexual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Graysexual" />
+
+        <ImageView
+            android:id="@+id/ivGraySexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hr_line_li"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvGraySexual" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/chkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnContinue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Show my orientation on my profile"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/button"
+        android:text="CONTINUE"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
